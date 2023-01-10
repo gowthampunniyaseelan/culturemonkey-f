@@ -16,7 +16,7 @@ function DeleteCompany(){
     e.preventDefault();
     setCompanyId("");
     try{
-      await axios.delete(`/company-management/companies/${companyId}`).then((result)=>{
+      await axios.delete(`https://company-management-app-new.onrender.com/company-management/companies/${companyId}`).then((result)=>{
         const {data} = result
         notify(data.message)
       }).catch((err)=>{

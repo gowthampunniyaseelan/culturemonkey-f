@@ -14,7 +14,7 @@ export default function Home() {
   }
   async function storeUserDetails(e){
     e.preventDefault()
-    await axios.post("/user-management/users",{
+    await axios.post("https://company-management-app-new.onrender.com/user-management/users",{
       username:userName,
       email:emailId
     }).then(()=>{

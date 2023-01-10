@@ -12,7 +12,7 @@ function GenerateUserListView(){
 
   async function getUserdetails(){
     try{
-     const {data} = await axios.get("/user-management/user-details/users")
+     const {data} = await axios.get("https://company-management-app-new.onrender.com/user-management/user-details/users")
      setShowUser(data)
      console.log(showUser);
     }catch(err){

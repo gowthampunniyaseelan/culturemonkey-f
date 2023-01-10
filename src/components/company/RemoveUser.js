@@ -16,7 +16,7 @@ function RemoveUser(){
     e.preventDefault();
     setEmailId("");
     try{
-      await axios.delete(`/company-management/user-management/users/${emailId}`).then((result)=>{
+      await axios.delete(`https://company-management-app-new.onrender.com/company-management/user-management/users/${emailId}`).then((result)=>{
         const {data} = result
         notify(data.message) 
       }).catch((err)=>{

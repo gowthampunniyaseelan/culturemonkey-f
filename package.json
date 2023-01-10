@@ -31,7 +31,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://company-management-app-new.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",

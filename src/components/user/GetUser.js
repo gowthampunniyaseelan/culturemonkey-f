@@ -23,7 +23,7 @@ function GetUser(){
     e.preventDefault();
     setUserId("")
     try{
-     await axios.get(`/user-management/user-details/users/${userId}`).then((result)=>{
+     await axios.get(`https://company-management-app-new.onrender.com/user-management/user-details/users/${userId}`).then((result)=>{
       const {data} = result
       console.log(result);
       if(data){

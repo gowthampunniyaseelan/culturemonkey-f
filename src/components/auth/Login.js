@@ -11,7 +11,7 @@ export default function Login() {
  }
   async function getUserDetails(e){
     e.preventDefault()
-    await axios.get(`/user-management/users/${emailId}`).then((result)=>{
+    await axios.get(`https://company-management-app-new.onrender.com/user-management/users/${emailId}`).then((result)=>{
       const {data} = result
        window.localStorage.setItem("emailId",data.email)
        window.location.href= "/create-company"

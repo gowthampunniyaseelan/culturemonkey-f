@@ -41,7 +41,7 @@ export default function UpdateCompany() {
 
  async function postCompanyName(){
     try{
-      await axios.put(`/company-management/companies/${company_id}`,{
+      await axios.put(`https://company-management-app-new.onrender.com/company-management/companies/${company_id}`,{
         company_name:company_name
       }).then((result)=>{
         const {data} = result
@@ -56,7 +56,7 @@ export default function UpdateCompany() {
   }
   async function postCompanyAddress(){
       try{
-        await axios.put(`/company-management/companies/${company_id}`,{
+        await axios.put(`https://company-management-app-new.onrender.com/company-management/companies/${company_id}`,{
           company_address:company_address
         }).then((result)=>{
           const {data} = result
@@ -73,7 +73,7 @@ export default function UpdateCompany() {
   }
   async function postCompanyLatitudeAndLongitude(){
       try{
-        await axios.put(`/company-management/companies/${company_id}`,{
+        await axios.put(`https://company-management-app-new.onrender.com/company-management/companies/${company_id}`,{
           coordinates:[latitude,longitude]
         }).then((result)=>{
           const {data} = result

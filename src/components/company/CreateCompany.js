@@ -25,7 +25,7 @@ function notifyerror(message){
     setLongitude("")
     setAddress("")
     try{
-     await axios.post("/company-management",{
+     await axios.post("https://company-management-app-new.onrender.com/company-management",{
         company_id:company_id,
         company_name:company_name,
         company_address:company_address,

@@ -11,7 +11,7 @@ function GenerateListView(){
   },[])
   async function getTheCompanydetails(){
     try{
-      const {data} = await axios.get("/company-management/company-details")
+      const {data} = await axios.get("https://company-management-app-new.onrender.com/company-management/company-details")
       console.log(data);
       setShowCompany(data)
     }catch(err){

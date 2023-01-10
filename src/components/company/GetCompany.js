@@ -21,7 +21,7 @@ function GetCompany(){
     e.preventDefault();
     setCompanyId()
     try{
-      await axios.get(`/company-management/company-details/${companyId}`).then((result)=>{
+      await axios.get(`https://company-management-app-new.onrender.com/company-management/company-details/${companyId}`).then((result)=>{
         setShowCompanyId(result.data.company_id)
         setShowCompanyName(result.data.company_name)
         setShowCompanyAddress(result.data.company_address)

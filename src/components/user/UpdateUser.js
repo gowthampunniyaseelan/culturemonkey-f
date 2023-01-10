@@ -59,7 +59,7 @@ export default function UpdateUser() {
 
  async function postFirstName(){
     try{
-      await axios.put(`/user-management/user-details/users/${emailId}`,{
+      await axios.put(`https://company-management-app-new.onrender.com/user-management/user-details/users/${emailId}`,{
         first_name:first_name
       }).then((result)=>{
       const {data} = result
@@ -74,7 +74,7 @@ export default function UpdateUser() {
   }
   async function postLastName(){
       try{
-        await axios.put(`/user-management/user-details/users/${emailId}`,{
+        await axios.put(`https://company-management-app-new.onrender.com/user-management/user-details/users/${emailId}`,{
           last_name:last_name
         }).then((result)=>{
           const {data} = result
@@ -89,7 +89,7 @@ export default function UpdateUser() {
   }
   async function postEmail(){
       try{
-        await axios.put(`/user-management/user-details/users/${emailId}`,{
+        await axios.put(`https://company-management-app-new.onrender.com/user-management/user-details/users/${emailId}`,{
           email:email
         }).then((result)=>{
           const {data} = result
@@ -104,7 +104,7 @@ export default function UpdateUser() {
   }
   async function postDesignation(){
         try{
-          await axios.put(`/user-management/user-details/users/${emailId}`,{
+          await axios.put(`https://company-management-app-new.onrender.com/user-management/user-details/users/${emailId}`,{
             designation:designation
           }).then((result)=>{
           const {data} = result
@@ -119,7 +119,7 @@ export default function UpdateUser() {
     }
     async function postDateOfBirth(){
           try{
-            await axios.put(`/user-management/user-details/users/${emailId}`,{
+            await axios.put(`https://company-management-app-new.onrender.com/user-management/user-details/users/${emailId}`,{
               date_of_birth:date_of_birth
             }).then((result)=>{
               const {data} = result
@@ -134,7 +134,7 @@ export default function UpdateUser() {
       }
       async function postActive(){
             try{
-              await axios.put(`/user-management/user-details/users/${emailId}`,{
+              await axios.put(`https://company-management-app-new.onrender.com/user-management/user-details/users/${emailId}`,{
                 active:active
               }).then((result)=>{
                 const {data} = result

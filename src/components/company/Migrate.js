@@ -36,7 +36,7 @@ const[storeId,setStoreId] = useState("");
     setStoreId(userId)
     setUserId("")
     try{
-     await axios.get(`company-management/user-management/${userId}`).then((result)=>{
+     await axios.get(`https://company-management-app-new.onrender.com/company-management/user-management/${userId}`).then((result)=>{
       const {data} =  result
       setToggleForDeleteButton(false)
       
@@ -70,7 +70,7 @@ const[storeId,setStoreId] = useState("");
   async function getThedetails(e){
     e.preventDefault();
     try{
-      await axios.put(`/company-management/user-management/${companyId}`,{
+      await axios.put(`https://company-management-app-new.onrender.com/company-management/user-management/${companyId}`,{
         first_name:first_name,
         last_name:last_name,
         email:email,
@@ -93,7 +93,7 @@ const[storeId,setStoreId] = useState("");
     }
   }
 function deleteUser(){
-  axios.delete(`/company-management/user-management/${storeId}`).then((result)=>{
+  axios.delete(`https://company-management-app-new.onrender.com/company-management/user-management/${storeId}`).then((result)=>{
     const {data} = result
     if(data.message === "Successfully Deleted"){
       notify(data.message)

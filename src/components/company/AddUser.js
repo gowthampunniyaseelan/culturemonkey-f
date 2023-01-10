@@ -27,7 +27,7 @@ function AddUser(){
     setDesignation("")
     setDateOfBirth("")
     try{
-     await axios.put(`/company-management/user-management/users/${company_id}`,{
+     await axios.put(`https://company-management-app-new.onrender.com/company-management/user-management/users/${company_id}`,{
       first_name:first_name,
       last_name:last_name,
       email:email,
