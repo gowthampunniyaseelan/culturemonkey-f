@@ -31,7 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "https://company-management-app.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
