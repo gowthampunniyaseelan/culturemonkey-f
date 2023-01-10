@@ -1,0 +1,88 @@
+/* .update-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+/* .update-company-id,.update-company-name,.update-address,.update-coordinates,.update-latitude,.update-longitude,.update-button{
+  padding: 20px 20px 0px 0px ;
+} */
+h3{
+  margin-top: 20px;
+  margin-left: -190px;
+}
+.update-form-container{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(195,180,217,1) 0%, rgba(175,200,230,0.4602883389683998) 0%);
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 80vw;
+  height: 90vh;
+  border-radius: 5px;
+}
+.update-company-id{
+  margin-top: 70px;
+  margin-left: 150px;
+  position: absolute;
+}
+.update-company-name{
+  margin-top: 140px;
+  margin-left: 150px;
+  position: absolute;
+}
+.update-address{
+  margin-top: 210px;
+  margin-left: 150px;
+  position: absolute;
+}
+.update-latitude{
+  margin-top: 280px;
+  margin-left: 150px;
+  position: absolute;
+}
+.update-longitude{
+  margin-top: 350px;
+  margin-left: 150px;
+  position: absolute;
+}
+input{
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 50vw;
+  position: absolute;
+  margin-top: 0px;
+  padding: 3px;
+  /* padding: 0; */
+  margin-left: 20px;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  }
+  input:hover{
+    box-shadow: 0 0 5px 0 #095484;
+  }
+.update-button>input{
+  border: none;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 40px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ border-radius: 30px;
+ margin-top: 420px;
+ margin-left: 680px;
+ position: absolute;
+}
+.update-button>input:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
